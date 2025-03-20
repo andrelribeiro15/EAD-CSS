@@ -1,23 +1,25 @@
+/*
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
+*/
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
 .sidebar {
     position: fixed;
-    width: 200px;
+    width: 10vh;
     height: 100%;
     background: #333;
     color: white;
-    padding: 20px;
+    padding: 1vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -29,52 +31,93 @@ body {
 }
 
 .sidebar li {
-    padding: 15px 0;
+    padding: 1.5vh 0;
     cursor: pointer;
 }
 
 .sidebar img {
-    width: 100px;
-    height: 100px;
+    width: 5vh;
+    height: 5vh;
     border-radius: 50%;
-    margin: 20px auto;
+    margin: 2vh auto;
 }
 
 header {
     position: fixed;
-    width: calc(100% - 200px);
-    height: 60px;
-    left: 200px;
+    width: 100%;
+    height: 6vh;
+    left: 10vh;
     background: #444;
     color: white;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 2vh;
 }
 
-main {
-    margin-left: 200px;
-    margin-top: 80px;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.conteiner {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+    background-color: white;
     border-radius: 8px;
-    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+/*
+h1 {
+    text-align: center;
+    color: #333;
+}
+*/
+label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
 
 footer {
     position: fixed;
-    width: calc(100% - 200px);
+    width: calc(100% - 10vh);
     bottom: 0;
-    left: 200px;
-    height: 40px;
+    left: 10vh;
+    height: 4vh;
     background: #444;
     color: white;
     display: flex;
